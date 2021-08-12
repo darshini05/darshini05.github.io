@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Darshini Ratadiya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="fisrtsection" class="card">
+        <img src="darshini-image.jpeg" alt="Darshini Profile Image" width="128" style="padding-top: 5%;">
+        <h2>Darshini Ratadiya</h2>
+        <h5>Web Developer</h5>
+        <button id="resume" style="margin: 2%;" name="resume" value="Resume" onclick="window.location.href='#contactsection'">Resume</button>
+        <button id="contactme" style="margin: 2%; background-color: black; color: white;" name="contactme" value="Contact me!" onclick="window.location.href='#contactsection'">Contact me!</button>
+    </div>
+
+    <div id="secondsection" class="card">
+
+        <div style="width: 50%; display: flexbox; float: left; text-align: left;">
+            <h2>
+                Basic Information
+            </h2>
+            <p>
+
+                <b>Name:</b> Darshini Ratadiya <br><br> <b>Student ID:</b> 139945208 <br><br> <b>Course:</b> Computer programming and Analysis <br><br> <b>Section:</b> ZAA <br><br> <b>Professor’s Name:</b> Muath Alzghool
+
+            </p>
+        </div>
+
+        <div style="width: 50%;  display: flexbox; float: right; text-align: left;">
+            <h2>
+                About me and Academic Honesty
+            </h2>
+            <p>
+
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the
+                WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students<br><br> <b>Date:</b>
+                <script>
+                    document.write(new Date().toLocaleDateString());
+                </script>
+
+            </p>
+
+        </div>
+    </div>
+
+    <h1>Education</h1>
+
+    <div id="thirdsection" class="card">
+
+        <div style="background-color: #503E8A; color: white; width: 20%; display: flexbox; float: left;">
+            <h4>
+                2021 - 2023(Expected)
+            </h4>
+
+            <h2>
+                Advance Diploma
+            </h2>
+
+        </div>
+
+        <div style="width: 78%; margin-left: 2%; display: flexbox; float: right; text-align: left;">
+            <h2>
+                Advance Diploma
+            </h2>
+            <p>Seneca College</p>
+            <p>
+                Computer programming and Analysis
+            </p>
+
+        </div>
+    </div>
+
+    <div id="thirdsection" class="card">
+
+        <div style="background-color: #503E8A; color: white; width: 20%; display: flexbox; float: left;">
+            <h4>
+                2016 - 2019
+            </h4>
+
+            <h2>
+                Higher Secondary School
+            </h2>
+
+        </div>
+
+        <div style="width: 78%; margin-left: 2%; display: flexbox; float: right; text-align: left;">
+            <h2>
+                Higher Secondary School
+            </h2>
+            <p>St. Xavier school</p>
+            <p>
+                Basic High school education
+            </p>
+
+        </div>
+    </div>
+
+    <div id="contactsection" class="card">
+
+        <h2>Contact Me</h2>
+        <form action="https://httpbin.org/post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="fullname" required placeholder="Your Full Name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="emailaddress" required placeholder="Your Email Address">
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="addressline" required placeholder="Your Address">
+
+            <label for="city">City</label>
+            <input list="city-list" name="citylist" id="city" required placeholder="Your city">
+
+            <datalist id="city-list">
+            <option value="Toronto"></option>
+            <option value="Scarborough"></option>
+            <option value="North York"></option>
+            <option value="Etobicoke"></option>
+            <option value="Ajax"></option>
+            </datalist>
+
+            <label for="postalcode">Postal Code</label>
+            <input type="text" id="postalcode" name="post" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]|[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" required placeholder="Your Postal Code">
+
+            <p>What is it about?</p>
+            <input type="radio" id="question" name="about" value="Question" checked onclick="hidePayRateInput()">
+            <label for="question">Question</label>
+            <input type="radio" id="comment" name="about" value="Comment" onclick="hidePayRateInput()">
+            <label for="comment">Comment</label>
+            <input type="radio" id="hiring" name="about" value="Hiring" onclick="showPayRateInput()" style=" margin-top: 6px; margin-bottom: 16px;">
+            <label for="hiring">Hiring</label><br>
+
+            <label id="payratelabel" for="payrate" style="display: none;">Pay Rate Expected? (Optional)</label>
+            <input type="number" id="payrate" name="payrate" style="display: none;" placeholder="Expected pay rate in Canadian dollars">
+
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write your message.." required rows="5"></textarea>
+
+            <label for="file">Attach file (optional)</label>
+            <input type="file" id="file" name="file" placeholder="Choose file">
+
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
